@@ -9,6 +9,10 @@
   --speed: 1000ms;
 }
 
+.new_name {
+  padding: 0%;
+}
+
 html, body {
   padding:0;
   margin:0;
@@ -51,11 +55,9 @@ h3 {
   top: 92%;
 }
 h4 {
-  font-size: 1rem;
+  font-size: 1.08rem;
   color: #000;
   position: absolute;
-  left: 50%;
-  top: 2%;
   transform: translateX(0%);
   white-space: nowrap;
   position: fixed;
@@ -63,9 +65,12 @@ h4 {
   top: 12%;
 }
 
+.event_text {
+  font-family:'Times New Roman', Times, serif;
+  padding: 0%;
+}
 
-
-h2 .button1 {
+.button1 {
   display: block;
   position: absolute;
   left: -200%;
@@ -74,17 +79,31 @@ h2 .button1 {
   width: 4rem;
   text-align: center;
   color: #fff;
-  border: #fff solid 0.2rem;
   font-size: 1rem;
   font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
   transform: translateX(-50%);
   background-color: var(--right-bg-color);
-  border-color: var(--right-button-hover-color);
-  
+  border-color:azure;
 }
 
+.button2 {
+  position: absolute;
+  left: 37%;
+  top: 33%;
+  height: 1.5rem;
+  width: 5rem;
+  text-align: center;
+  color: #fff;
+  font-size: -1rem;
+  font-weight:bold;
+  transform: translateX(-50%);
+  background-color: var(--right-bg-color);
+  border-color:azure;
+}
+
+.button1:hover, .button2:hover {
+  box-shadow: 0px 5px 5px rgba(20, 13, 13, 0.767);
+}
 
 .glass {
   background: white;
@@ -106,8 +125,7 @@ h2 .button1 {
 
 .glass.right {
   display: flex;
-  align-items: center;
-  text-align: center;
+  line-break: auto;
   background: white;
   min-height: 60vh;
   width: 40%;
@@ -122,6 +140,16 @@ h2 .button1 {
   position: fixed;
   left:700px;
   top:225px;
+}
+
+.field {
+
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  position: fixed;
+  left:100px;
+  top:80px;
 }
 
 .split.left .button:hover {
